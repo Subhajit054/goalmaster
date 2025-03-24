@@ -1,0 +1,130 @@
+[debug] [2025-03-24T08:05:53.615Z] ----------------------------------------------------------------------
+[debug] [2025-03-24T08:05:53.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\subha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-03-24T08:05:53.625Z] CLI Version:   13.35.1
+[debug] [2025-03-24T08:05:53.625Z] Platform:      win32
+[debug] [2025-03-24T08:05:53.625Z] Node Version:  v22.14.0
+[debug] [2025-03-24T08:05:53.626Z] Time:          Mon Mar 24 2025 13:35:53 GMT+0530 (India Standard Time)
+[debug] [2025-03-24T08:05:53.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-24T08:05:53.635Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-24T08:05:53.636Z] > authorizing via signed-in user (iam788494@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\subha\OneDrive\Desktop\goalmaster
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-24T08:09:21.235Z] Checked if tokens are valid: false, expires at: 1742749475560
+[debug] [2025-03-24T08:09:21.236Z] Checked if tokens are valid: false, expires at: 1742749475560
+[debug] [2025-03-24T08:09:21.236Z] > refreshing access token with scopes: []
+[debug] [2025-03-24T08:09:21.241Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-24T08:09:21.241Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-24T08:09:22.013Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-24T08:09:22.013Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-24T08:09:22.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-03-24T08:09:23.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-03-24T08:09:23.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project goaltracker-63b90 (GoalTracker) 
+[info] 
+=== Firestore Setup
+[debug] [2025-03-24T08:09:28.261Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:28.261Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:28.262Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/goaltracker-63b90/services/firestore.googleapis.com [none]
+[debug] [2025-03-24T08:09:28.262Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/goaltracker-63b90/services/firestore.googleapis.com x-goog-quota-user=projects/goaltracker-63b90
+[debug] [2025-03-24T08:09:30.795Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/goaltracker-63b90/services/firestore.googleapis.com 200
+[debug] [2025-03-24T08:09:30.795Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/goaltracker-63b90/services/firestore.googleapis.com [omitted]
+[debug] [2025-03-24T08:09:30.796Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:30.796Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:30.796Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default) [none]
+[debug] [2025-03-24T08:09:31.806Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default) 200
+[debug] [2025-03-24T08:09:31.806Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default) {"name":"projects/goaltracker-63b90/databases/(default)","uid":"2a32a30e-56a0-4abc-aab3-d64865dbabdf","createTime":"2025-03-23T16:41:20.929210Z","updateTime":"2025-03-23T16:41:20.929210Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-03-24T07:09:31.537850Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IOru3P2hoowDMLrzr8LSoIwD"}
+[debug] [2025-03-24T08:09:31.806Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-03-24T08:09:31.806Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-03-24T08:09:31.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-24T08:09:31.807Z] > authorizing via signed-in user (iam788494@gmail.com)
+[debug] [2025-03-24T08:09:31.807Z] [iam] checking project goaltracker-63b90 for permissions ["firebase.projects.get"]
+[debug] [2025-03-24T08:09:31.808Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:31.808Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:09:31.808Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/goaltracker-63b90:testIamPermissions [none]
+[debug] [2025-03-24T08:09:31.808Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/goaltracker-63b90:testIamPermissions x-goog-quota-user=projects/goaltracker-63b90
+[debug] [2025-03-24T08:09:31.808Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/goaltracker-63b90:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-24T08:09:33.856Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/goaltracker-63b90:testIamPermissions 200
+[debug] [2025-03-24T08:09:33.856Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/goaltracker-63b90:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-03-24T08:10:33.310Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:33.310Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:33.310Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/releases pageSize=10&pageToken=
+[debug] [2025-03-24T08:10:35.511Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/releases 200
+[debug] [2025-03-24T08:10:35.511Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/releases {"releases":[{"name":"projects/goaltracker-63b90/releases/cloud.firestore","rulesetName":"projects/goaltracker-63b90/rulesets/ff8bee8b-53ac-49a1-a98e-0cd43d97fa0d","createTime":"2025-03-23T16:41:31.827433Z","updateTime":"2025-03-23T16:41:31.827433Z"}]}
+[debug] [2025-03-24T08:10:35.511Z] Found ruleset: projects/goaltracker-63b90/rulesets/ff8bee8b-53ac-49a1-a98e-0cd43d97fa0d
+[debug] [2025-03-24T08:10:35.511Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:35.511Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:35.512Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/rulesets/ff8bee8b-53ac-49a1-a98e-0cd43d97fa0d [none]
+[debug] [2025-03-24T08:10:36.943Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/rulesets/ff8bee8b-53ac-49a1-a98e-0cd43d97fa0d 200
+[debug] [2025-03-24T08:10:36.943Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/goaltracker-63b90/rulesets/ff8bee8b-53ac-49a1-a98e-0cd43d97fa0d [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-03-24T08:10:40.560Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:40.560Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:40.560Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:40.560Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:40.561Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-03-24T08:10:40.563Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-03-24T08:10:41.449Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-03-24T08:10:41.449Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-03-24T08:10:41.655Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-03-24T08:10:41.655Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/goaltracker-63b90/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/goaltracker-63b90/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[debug] [2025-03-24T08:10:41.661Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:41.661Z] Checked if tokens are valid: true, expires at: 1742807361013
+[debug] [2025-03-24T08:10:41.662Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/goaltracker-63b90 [none]
+[debug] [2025-03-24T08:10:42.576Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/goaltracker-63b90 200
+[debug] [2025-03-24T08:10:42.576Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/goaltracker-63b90 {"projectId":"goaltracker-63b90","projectNumber":"4084462872","displayName":"GoalTracker","name":"projects/goaltracker-63b90","resources":{"hostingSite":"goaltracker-63b90"},"state":"ACTIVE","etag":"1_6bccfdcf-c656-47b5-83e9-f9510ede6da3"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-03-24T08:13:00.768Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-03-24T08:13:01.426Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-03-24T08:13:01.426Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.5.0","browserURL":"https://www.gstatic.com/firebasejs/11.5.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.5.0/firebase.tgz"},"live":{"version":"11.5","browserURL":"https://www.gstatic.com/firebasejs/live/11.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.5/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.5.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.5.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.5.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.5.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.5.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.5.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.5.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.5.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.5.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.5.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\subha\OneDrive\Desktop\goalmaster is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=898053205&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-24T08:43:38.495Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-03-24T08:43:38.504Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-03-24T08:43:39.443Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-03-24T08:43:39.443Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-03-24T08:43:39.480Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-03-24T08:43:40.350Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-03-24T08:43:40.350Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Subhajit054","id":182372363,"node_id":"U_kgDOCt7ICw","avatar_url":"https://avatars.githubusercontent.com/u/182372363?v=4","gravatar_id":"","url":"https://api.github.com/users/Subhajit054","html_url":"https://github.com/Subhajit054","followers_url":"https://api.github.com/users/Subhajit054/followers","following_url":"https://api.github.com/users/Subhajit054/following{/other_user}","gists_url":"https://api.github.com/users/Subhajit054/gists{/gist_id}","starred_url":"https://api.github.com/users/Subhajit054/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Subhajit054/subscriptions","organizations_url":"https://api.github.com/users/Subhajit054/orgs","repos_url":"https://api.github.com/users/Subhajit054/repos","events_url":"https://api.github.com/users/Subhajit054/events{/privacy}","received_events_url":"https://api.github.com/users/Subhajit054/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":23,"public_gists":0,"followers":0,"following":0,"created_at":"2024-09-21T19:37:28Z","updated_at":"2025-03-24T08:39:48Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":28445,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Subhajit054 
+[info] 

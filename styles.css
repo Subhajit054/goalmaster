@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e48aa, #9d50bb);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+.flip-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+.flip-card {
+    width: 80px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.flip-card.flip {
+    transform: rotateX(360deg);
+}
+
+.flip-card .front, .flip-card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(45deg, #ff6f61, #ff9f1c);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card .back {
+    transform: rotateX(180deg);
+}
+
+.flip-label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.goal-list, .completed-goals {
+    margin: 20px 0;
+}
+
+.goal-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.goal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.goal-item span {
+    color: #333;
+    font-weight: 600;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+    transition: width 0.5s ease;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4081;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #f50057;
+    transform: scale(1.05);
+}
+
+.goal-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    flex: 1;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn {
+    background: #00e676;
+}
+
+.add-btn:hover {
+    background: #00c853;
+}
+
+.motivation {
+    font-size: 1.3em;
+    color: #ffeb3b;
+    text-align: center;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+.completed-goals h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#completed-list {
+    list-style: none;
+}
+
+#completed-list li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #4caf50;
+    font-weight: 500;
+    animation: slideIn 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
